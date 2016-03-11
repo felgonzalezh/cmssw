@@ -20,3 +20,8 @@ process.test = cms.EDAnalyzer("GEMGeometryAnalyzer")
 
 process.p = cms.Path(process.test)
 
+#Comment the next two lines if you want to use the default geoemtry
+from Geometry.GEMGeometry.gemGeometryCustoms import custom_GE21_v7 
+process = custom_GE21_v7(process)
+
+
