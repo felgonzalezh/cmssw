@@ -44,7 +44,8 @@
   <Constant name="distTop"      value="([rMinL]+2*[dzInF]+[distSens])"/>
   <Constant name="Angle"	value="10.4045*deg"/>
   <Constant name="slope"	value="tan([Angle])"/>
-  <Constant name="dxTop"        value="[distTop]*[slope]"/>
+  <!--Constant name="dxTop"        value="[distTop]*[slope]"/-->
+  <Constant name="dxTop"        value="1178*mm"/>
   <Constant name="dx011F"       value="([dxTop]-[slope]*([dzInF]-[z010F]+[dzS01F]))"/>
   <Constant name="dx012F"       value="([dxTop]-[slope]*([dzInF]-[z010F]-[dzS01F]))"/>
   <Constant name="dx021F"       value="([dxTop]-[slope]*([dzInF]-[z020F]+[dzS02F]))"/>
